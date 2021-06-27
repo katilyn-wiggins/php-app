@@ -14,7 +14,7 @@
       <div class="mainSection">
 
         <div class="logoContainer">
-          <img src="assets/legoog.png" alt="google" height="150px">
+          <img src="assets/images/legoog.png" alt="google" height="150px">
         </div>
 
         <div class="searchContainer">

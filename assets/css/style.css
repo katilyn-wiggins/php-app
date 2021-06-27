@@ -31,7 +31,7 @@ body {
 
 /* search container underneath main section  */
 .mainSection .searchContainer {
-  margin-top: 20px; 
+  margin-top: 5px; 
   width: 100%; 
 }
 
@@ -72,4 +72,13 @@ body {
   width: 70%; 
   max-width: 630px;
   color: #000; 
+}
+
+.mainSection .logoContainer { 
+  width: 250px;
+  text-align: center; 
+}
+
+.logoContainer img {
+  width: 100%;
 }
