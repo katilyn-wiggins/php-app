@@ -28,8 +28,8 @@
           <form action="search.php" method="GET">
             <div class="searchBarContainer">
               <input class="searchBox" type="text" name="term">
-                <button>
-                  Search
+                <button class="searchButton">
+                  <img src="assets/images/search.png" /> 
                 </button>
             </div>
           </form>
