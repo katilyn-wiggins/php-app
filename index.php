@@ -8,25 +8,28 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-  test font here 
-    <div class="mainSection">
 
-      <div class="logoContainer">
-        <img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" alt="google" height="150px">
-      </div>
+  <div class="wrapper indexPage"> 
 
-      <div class="searchContainer">
+      <div class="mainSection">
 
-        <form action="search.php" method="GET">
+        <div class="logoContainer">
+          <img src="assets/legoog.png" alt="google" height="150px">
+        </div>
 
-          <input type="text" class="searchBox" name="term" >
-          <input type="submit" class="searchButton" value="Search">
-        
-        </form>
+        <div class="searchContainer">
+
+          <form action="search.php" method="GET">
+
+            <input type="text" class="searchBox" name="term" >
+            <input type="submit" class="searchButton" value="Search">
+          
+          </form>
+
+        </div>
 
       </div>
 
     </div>
-
 </body>
 </html>
