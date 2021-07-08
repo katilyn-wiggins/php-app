@@ -1,0 +1,182 @@
+/* use as many classnames as possible to increase specificity and reduce chance of accidentally overwriting somethin */
+
+* {
+  font-family: arial, sans-serif;
+  color: #545454;
+}
+
+/* make gap go away and make height 100% */
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* wrapper on index page only */
+.wrapper.indexPage {
+  justify-content: center;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* search container underneath main section  */
+.mainSection .searchContainer {
+  margin-top: 5px;
+  width: 100%;
+}
+
+/* targeting the form tag underneath the search container */
+.mainSection .searchContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* search button */
+.searchContainer .searchButton {
+  color: #757575;
+  background-color: #f5f5f5;
+  border: none;
+  height: 36px;
+  width: 125px;
+  border-radius: 1px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+  /* takes away blue outline around box */
+}
+
+/* text box styling */
+.mainSection .searchContainer .searchBox {
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  height: 44px;
+  border-radius: 2px;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 70%;
+  max-width: 630px;
+  color: #000;
+}
+
+.mainSection .logoContainer {
+  width: 250px;
+  text-align: center;
+}
+
+.logoContainer img {
+  width: 100%;
+  height: 100px;
+}
+
+.header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.wrapper .headerContent {
+  display: flex;
+  align-items: center;
+}
+
+.headerContent .logoContainer {
+  width: 150px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+
+.headerContent .logoContainer img {
+  height: 50px;
+}
+
+.headerContent .searchContainer {
+  flex: 1;
+}
+
+.headerContent .searchContainer form {
+  margin: 15px 0 28px 0;
+}
+
+.headerContent .searchBarContainer {
+  height: 44px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  width: 70%;
+  max-width: 630px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.headerContent .searchBarContainer .searchBox {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  padding: 12px;
+  font-size: 16px;
+  color: #000;
+}
+
+.headerContent .searchBarContainer .searchButton {
+  background-color: #fff;
+  height: 44px;
+  margin-top: 0px;
+  width: 44px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.headerContent .searchBarContainer .searchButton img {
+  padding-top: 10px;
+  width: 22px;
+  padding-left: 5px;
+}
+
+/* site and image tabs */
+
+.tabsContainer {
+  margin-left: 150px;
+}
+
+.tabList {
+  padding: 0;
+  margin: 0;
+}
+
+.tabsContainer .tabList li {
+  display: inline-block;
+  padding: 0 16px 12px 16px;
+  text-decoration: none;
+  color: #777;
+  font-size: 13px;
+}
+
+.tabsContainer .tabList li a {
+  text-decoration: none;
+}
+
+/* active tabs */
+
+.tabsContainer .tabList li.active {
+  border-bottom: 3px solid #1a73e8;
+}
+
+.tabsContainer .tabList li.active a {
+  font-weight: bold;
+  color: #1a73e8;
+}
