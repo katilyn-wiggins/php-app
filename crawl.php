@@ -181,7 +181,7 @@ function followLinks($url) {
   }
 }
 
-$startUrl = "http://www.yahoo.com"; 
+$startUrl = "http://www.reddit.com"; 
 followLinks($startUrl);
 
 
