@@ -19,6 +19,15 @@ class DomDocumentParser {
   public function getlinks() {
     return $this->doc->getElementsByTagName("a"); //get all anchor tags on website
   }
+
+
+  public function getTitleTags() {
+  return $this->doc->getElementsByTagName("title"); //get all title tags on website
+  }
+
+  public function getMetaTags() {
+  return $this->doc->getElementsByTagName("meta"); //get all title tags on website
+  } 
 }
 
 ?>

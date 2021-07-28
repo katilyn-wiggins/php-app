@@ -31,6 +31,45 @@ function createLink($src, $url) {
 
 }
 
+function getDetails($url) {
+
+    $parser = new DomDocumentParser($url); 
+    $titleArray = $parser->getTitleTags(); 
+
+    //making sure the title array is not empty
+    if(sizeOf($titleArray) == 0 || $titleArray->item(0) == NULL) {
+      return; 
+    } 
+
+    $title = $titleArray->item(0)->nodeValue;  //title of the first item in the array
+    $title = str_replace("\n", "", $title); 
+
+    if($title == "") { //if no title exists, ignore link
+      return; 
+    }
+
+    //keywords and description
+    $description = "";
+    $keywords = "";
+
+    $metasArray = $parser->getMetaTags(); 
+
+    foreach($metasArray as $meta) {
+      if($meta->getAttribute("name") == "description") {
+        $description = $meta->getAttribute("content"); 
+      }
+      if($meta->getAttribute("name") == "keywords") {
+        $description = $meta->getAttribute("content"); 
+      }
+    }
+
+      $description = str_replace("\n", "", $title); 
+      $keywords = str_replace("\n", "", $title); 
+
+    
+}
+
+
 function followLinks($url) {
 
   global $alreadyCrawled; 
@@ -57,10 +96,10 @@ function followLinks($url) {
       $alreadyCrawled[] = $href; //put it at next item in array
       $crawling[] = $href; 
 
+      getDetails($href); 
       //insert href
     }
-
-    echo $href . "<br>"; 
+    else return; 
   }
 
   array_shift($crawling); 
