@@ -26,8 +26,12 @@ class DomDocumentParser {
   }
 
   public function getMetaTags() {
-  return $this->doc->getElementsByTagName("meta"); //get all title tags on website
+  return $this->doc->getElementsByTagName("meta"); //get all meta tags on website
   } 
+
+  public function getImages() {
+    return $this->doc->getElementsByTagName("img"); //get all image tags on website
+    } 
 }
 
 ?>
