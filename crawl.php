@@ -171,7 +171,7 @@ function followLinks($url) {
       getDetails($href); 
       //insert href
     }
-    else return; 
+    // else return; 
   }
 
   array_shift($crawling); 
@@ -181,7 +181,7 @@ function followLinks($url) {
   }
 }
 
-$startUrl = "http://www.reddit.com"; 
+$startUrl = "http://www.bbc.com"; 
 followLinks($startUrl);
 
 
